@@ -1,5 +1,9 @@
 # Automação para envio de emails, API-Flasck
 
+### Dependencias
+- Navegador web
+- Docker
+
 ### Rodar API
 1. Buildar imagem 
     ```
@@ -10,4 +14,6 @@
     docker run -it  <nome da imagen>
     ```
 
-    ### DATABASE em Construção
+### Data Base
+    
+<https://github.com/pthom/northwind_psql/blob/master/northwind.sql>

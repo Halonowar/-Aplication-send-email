@@ -1,10 +1,13 @@
-FROM postgres:14.4
+FROM postgres:latest
 
-ENV PGUSER=postgres
-ENV PGPASSWORD=postgres
-ENV PGDATABASE=bia
+ENV POSTGRES_USER postgres
+ENV POSTGRES_PASSWORD mysecretpassword
+ENV POSTGRES_DB mydatabase
 ENV PGPORT=5432
 
+EXPOSE 5432
+
+COPY /database/db.sql /docker-entrypoint-initdb.d/
 RUN apt-get update
 
 # RUN mkdir -p /home/db
