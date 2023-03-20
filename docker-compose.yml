@@ -8,3 +8,11 @@ services:
       context: ./app
     ports:
       - "5000:5000"
+
+  db:
+    container_name: postgres
+    build: 
+      context: ./db
+    ports:
+      - "5432:5432"
+    
